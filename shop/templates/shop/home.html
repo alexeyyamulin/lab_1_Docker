@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'shop/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Главная страница</title>
+</head>
+<body>
+    <header>
+        <h1>THE AUTO EMPORIUM</h1>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'car_list' %}">Каталог</a>
+            <a href="{% url 'cart' %}">Корзина</a>
+            <a href="{% url 'login' %}">Авторизация</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-text">
+            <p>Откройте для себя мир автомобилей, где качество встречается с комфортом. Мы предлагаем широкий выбор моделей, чтобы каждый мог найти свой идеальный автомобиль. Присоединяйтесь к нам и начните свое путешествие уже сегодня!</p>
+            <a href="{% url 'car_list' %}" class="btn_1">Посмотреть автомобили</a>
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <h3>Новые поступления</h3>
+            <p>Ознакомьтесь с последними моделями автомобилей, которые только что поступили в продажу.</p>
+        </div>
+        <div class="feature">
+            <h3>Популярные автомобили</h3>
+            <p>Посмотрите на самые продаваемые автомобили этого месяца.</p>
+        </div>
+        <div class="feature">
+             <h3>Специальные предложения</h3>
+             <p>Не пропустите наши эксклюзивные предложения и скидки на автомобили!</p>
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>О нас</h3>
+            <p>Мы - ваш надежный партнер в мире автомобилей. Предлагаем широкий ассортимент новых автомобилей, а также профессиональные услуги по продаже. У нас вы найдете идеальный автомобиль, который соответствует вашим потребностям и бюджету.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Полезные ссылки</h3>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Доставка и возврат</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Контакты</h3>
+            <p>Телефон: +7 (931) 258-73-09</p>
+            <p>Email: yalex2003@mail.ru</p>
+            <p>Адрес: ул. Новобульварная, 24, Чита, Россия</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 THE AUTO EMPORIUM. Все права защищены.</p>
+    </div>
+</footer>
+
+</body>
+</html>

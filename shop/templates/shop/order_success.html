@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'shop/styles.css' %}">
+    <title>Заказ оформлен</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Спасибо за ваш заказ!</h2>
+        <p>Ваш заказ был успешно оформлен.</p>
+        <p>В ближайшем времени с вами свяжется консультант для подтверждения покупки. </p>
+    </div>
+    <div>
+        <a href="{% url 'home' %}" class="button-home">На главную</a>
+    </div>
+</body>
+</html>

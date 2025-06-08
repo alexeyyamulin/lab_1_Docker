@@ -1,0 +1,22 @@
+# Файлы Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# База данных SQLite
+db.sqlite3
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+.env/
+
+# Системные файлы
+.DS_Store
+*.swp
+
+# Миграции (если не хотите их коммитить)
+*/migrations/*
+!*/migrations/__init__.py
